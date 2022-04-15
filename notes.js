@@ -107,3 +107,15 @@ function compressingStrings(str) {
 //! Output: false
 //! Input: "copyright"
 //! Output: true
+
+function uniqueness(str) {
+  for (let i = 0; i < str.length; i++) {
+    for (let x = i + 1; x < str.length; x++) {
+      if (str[i] == str[x]) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+//Here we are first going through a for loop, with i incrementing by 1 at the length of the string, then running through another for loop checking the position at i + 1. If at any time we encounter two of the same characters, it will return false.
