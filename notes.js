@@ -90,13 +90,9 @@ function compressingStrings(str) {
     if (str[i] != str[i+1]) { //if string at 1 is not equal to string at 2 it preforms the code below
       result += count + str[i]; //concatenating the string together
       count = 0; //resets the counter for the next run through the loop
-      if (str[i] == str[i]) {
-        count = 0;
-        result += count + str[i];
-      }
     }
   }
-  return result;
+  return result.replaceAll('1', '');
 }
 
 //Here we set an empty string as the result, set a counter to count the times a number or letter occurs in the string we are passing into the function. We then set a counter to count how many times it the number or letter occurs in the string. We then run the string through a loop an compare the current and next characters. If both the characters are not the same we then increment the count by 1 and do a string concatenation.
