@@ -89,7 +89,11 @@ function compressingStrings(str) {
     count++ //each time the character is repeated it increments.
     if (str[i] != str[i+1]) { //if string at 1 is not equal to string at 2 it preforms the code below
       result += count + str[i]; //concatenating the string together
-      count = 0;
+      count = 0; //resets the counter for the next run through the loop
+      if (str[i] == str[i]) {
+        count = 0;
+        result += count + str[i];
+      }
     }
   }
   return result;
@@ -159,3 +163,4 @@ function sort(arr) {
 }
 
 //Notes to come after lunch!
+//Since i got prompt 4 i will be focusing on that now.
