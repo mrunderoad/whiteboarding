@@ -118,4 +118,34 @@ function uniqueness(str) {
   }
   return true;
 }
-//Here we are first going through a for loop, with i incrementing by 1 at the length of the string, then running through another for loop checking the position at i + 1. If at any time we encounter two of the same characters, it will return false.
+//Here we are first going through a for loop, with i incrementing by 1 at the length of the string, then running through another for loop checking the position at i + 1. If at any time we encounter two of the same characters, it will return false. The looping is going through each character twice and checking if they are equal to any other characters that have already been looped through. 
+
+//! Using Sets!
+function uniqueness(str) {
+  let set = new Set(str)
+  if (set.size != str.length) {
+    return false;
+  }
+  return true;
+}
+//A JavaScript set is a collection of unique values. Each value can only occur once in a set. A set can hold any type of data type. This function creates a new set, checks if the set size(aka the string without recurring characters) is equal to the originally inputted string. returns true if they are the same and false if not.
+
+//?---------------------------------------------------------------
+
+//! Question #5: Array Sorting
+//! Write an algorithm that sorts an array without using the sort() method. There are many different sorting algorithms - take the time to read about the following:
+
+//! Quick sort
+//! Merge sort
+//! Heap sort
+//! Insertion sort
+//! Bubble sort
+//! Selection sort
+//! You may implement any of the above algorithms (or your own) to solve the problem - as long as it doesn't use sort().
+
+//! Example
+//! Input: [9, 2, 7, 12]
+//! Output: [2, 7, 9, 12]
+
+
+
