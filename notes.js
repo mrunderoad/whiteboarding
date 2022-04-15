@@ -147,5 +147,16 @@ function uniqueness(str) {
 //! Input: [9, 2, 7, 12]
 //! Output: [2, 7, 9, 12]
 
+function sort(arr) {
+  for (let i = 0; i < arr.length; i += 1) {
+    if (arr[i - 1] > arr[i]) {
+      var that = arr[i -1];
+      arr[i -1] = arr[i];
+      arr[i] = that;
+    }
+  }
+  return arr;
+} 
+
 
 
