@@ -109,7 +109,7 @@ function compressingStrings(str) {
 //! Output: true
 
 function uniqueness(str) {
-  for (let i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i++) { 
     for (let x = i + 1; x < str.length; x++) {
       if (str[i] == str[x]) {
         return false;
@@ -156,7 +156,4 @@ function sort(arr) {
     }
   }
   return arr;
-} 
-
-
-
+}
