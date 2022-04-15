@@ -16,3 +16,11 @@ function unique(str) {
   }
   return true;
 }
+
+function unique(str) {
+  let set = new Set(str); <-- "hello" set will change this to "helo"
+  if (set.size != str.length) { <-- if the set size is NOT equal to the original str length, return false
+    return false;
+  }
+  return true; <-- if the set size is the same as the original string it returns true!
+}
