@@ -33,6 +33,7 @@ function replaceString(str) {
   const result = str.split(' ').join('%20');
   return result;
 }
+
 //EX: let str = "This will have %20 replacing spaces."
 //Return: "This%20will%20have%20%20%20replacing%20spaces."
 
